@@ -16,6 +16,9 @@ body{
 }
 .main-section{
   height: 100vh;
+  margin: 0;
+  background-color: black;
+  background-position: fixed;
 }
 .myVideo{
   /* position: fixed; */
@@ -47,7 +50,27 @@ li{
   font-size: 18px;
   display: inline;
   padding: 50px;
+  margin: 3px;
 }
 .section-two{
   height: 100vh;
+  margin: 0;
+  padding: 1px;
+  background-color: #bd0000;
+  background-attachment: fixed;
+}
+.about-me{
+  margin-top: 20%;
+  font-family: "Roboto-Regular.ttf";
+  color: white;
+  font-size: 20px;
+  float: left;
+  width: 40%;
+  margin-left: 18%;
+}
+.icon-anna{
+  border-radius: 92px;
+  float: left;
+  margin-top: 23%;
+  margin-left: 15%;
 }
