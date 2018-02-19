@@ -20,9 +20,14 @@ body{
   overflow: hidden;
   background-color: black;
   background-position: fixed;
+  /* background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .5)); */
+}
+.test{
+  background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .5));
 }
 .myVideo{
   width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .5));
 }
 .main-nav{
   position: fixed;
@@ -56,17 +61,22 @@ body{
   height: 100vh;
   margin: 0;
   padding: 1px;
-  background-color: #bd0000;
+  background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .5)),
+  url("/assests/jeshoots-com-219386.jpg");
+  background-size: cover;
+  /* background-color: #bd0000; */
   background-attachment: fixed;
+  /* border: 6px solid black; */
 }
 .about{
-  margin-top: 15%;
+  margin-top: 7%;
 }
 .about-me{
   /* margin-top: 20%; */
-  font-family: "Roboto-Regular.ttf";
+  font-family: "Helvetica Neue";
   color: white;
-  font-size: 20px;
+  font-size: 35px;
+  font-weight: 300;
   float: left;
   width: 40%;
   margin-left: 18%;
@@ -79,7 +89,7 @@ body{
 }
 .section-three{
   height: 150vh;
-  background-color: #D4D4D4;
+  background-color: #ececec;
   /* background-color: #29C3ED; */
   padding: 1px;
   /* overflow: hidden; */
@@ -136,4 +146,7 @@ body{
   font-family: "Roboto-Regular.ttf";
   color: black;
   font-size: 17px;
+}
+.other-skills-li:hover{
+  color: white;
 }
