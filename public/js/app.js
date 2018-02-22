@@ -12,10 +12,29 @@ $(document).ready(function() {
       } else if//otherwise
         ($('.lang-img').css('display') =='none'){//if .lang-img is display none (because of the mouseover)
           $(this.nextElementSibling).show("inline-block")//then this(.lang-img) next sibling (which is back), will display inline-block
-      }
+      } 
       $(this).toggle()
     })
+    $(".back").mouseleave(function(){
+      alert("I am closing")
+      if($(this.previousElementSibling).css('display') == 'none'){
+        // alert("grabbed the right elem")
+        $(this.previousElementSibling).show() 
+      } 
+      $(this).toggle()
+    })
+
   })
+
+
+
+
+
+
+
+
+
+  
 
   // $(document).ready(function() {
 //   $(".lang-img").hover(function () {
