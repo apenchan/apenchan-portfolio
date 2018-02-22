@@ -14,6 +14,22 @@ body{
   margin: 0;
   padding: 0;
 }
+.main-nav{
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 9999;
+  box-shadow: 2px 2px 2px #B3B3B3;
+}
+.nav-list{
+  /* text-align: center; */
+  padding-top: 6px;
+  height: 30px;
+  overflow: hidden;
+  float: right;
+  margin-right: 100px;
+  background-color: white;
+}
 .main-section{
   height: 100vh;
   margin: -1px;
@@ -37,19 +53,6 @@ u{
 .myVideo:before{
   opacity: .6;
   position: absolute;
-}
-.main-nav{
-  position: fixed;
-  width: 100%;
-  background-color: white;
-  z-index: 9999;
-  box-shadow: 2px 2px 2px #B3B3B3;
-}
-.nav-list{
-  /* text-align: center; */
-  float: right;
-  margin-right: 100px;
-  background-color: white;
 }
 .first-blurb{
   font-family: "Helvetica Neue";
@@ -121,6 +124,7 @@ u{
   /* margin-bottom: 7%; */
   width: 420px;
   margin-left: 33%;
+  line-height: 2.2em;
   box-sizing: border-box;
   border: 2px solid black;
 }
@@ -132,14 +136,62 @@ u{
   overflow: hidden;
   padding: 0;
   padding-top: 94px;
+  transition: 0.6s;
+  /* transform-style: preserve-3d;
+  position: relative; */
+  /* added perspective below */
+  /* perspective: 1000px; */
 }
 .language{
+  /* transition: 0.6s;
+  transform-style: preserve-3d; */
+  position: relative;
+  /* added stuff above */
   text-align: center;
   padding: 16px;
   display: inline-block;
   padding-bottom: 100px;
   width: 30%;
 }
+/* .front, .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+}
+.front{
+  z-index: 1;
+}
+.back {
+  transform: rotateX(-180deg);
+  background-color:green; 
+  animation: toFront 0.3s linear normal forwards;
+}
+
+.flip-container{
+  position: relative;
+  perspective: 1000px;
+}
+.flip-container:hover .back {
+  animation-delay: 0.3s;
+  animation: toBack 0.3s linear normal  forwards;
+}
+@keyframes toBack {  
+  0% {z-index:0;}
+  100% {z-index:1;}
+}
+@keyframes toFront {
+  0% {z-index:1;}
+  100% {z-index:0;}
+}
+.flip-container .skills {
+  transform-origin: 100% 240px; 
+}
+
+.flip-container:hover .skills {
+  transform: rotateX(-180deg);
+}  */
 .lang-img{
   height: 130px;
 }
@@ -218,6 +270,10 @@ u{
 .fa-github-square{
   color: black;
 }
-.email{
-  padding-top: 15px;
+.fa-envelope-square{
+color: #cd3838;
+}
+.footer-note{
+  font-family: sans-serif;
+  font-size: 15px;
 }
