@@ -195,6 +195,10 @@ u{
 .lang-img{
   height: 130px;
 }
+.back{
+  height: 200px;
+  border: 2px solid black;
+}
 .other-skils{
   text-align: center;
 }

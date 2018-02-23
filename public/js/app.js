@@ -6,7 +6,7 @@ $(document).ready(function() {
     var back = $(".back");//declaring a var for elem back
     back.hide();//when my document loads, I will hide the elem from sight
   
-    $(".lang-img").mouseover(function () {//when I hover over ".lang-img"
+    $(".lang-img").mouseenter(function () {//when I hover over ".lang-img"
       if($(back).css('display') == 'none'){//check to see if back is display none and if so
         $(this.nextElementSibling).show("inline-block")//then this (which is lang-img) and its next elem (which is .back), will display inline block
       } else if//otherwise
