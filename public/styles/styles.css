@@ -56,6 +56,7 @@ u{
 }
 .first-blurb{
   font-family: "Helvetica Neue";
+  font-weight: 300;
   font-size: 60px;
   color: white;
   position: absolute;
@@ -109,7 +110,7 @@ u{
   margin-left: 15%;
 }
 .section-three{
-  height: 150vh;
+  height: 180vh;
   background-color: #ececec;
   /* background-color: #29C3ED; */
   padding: 1px;
@@ -143,12 +144,12 @@ u{
   /* perspective: 1000px; */
 }
 .language{
-  /* transition: 0.6s;
-  transform-style: preserve-3d; */
+  transition: 0.6s;
+  transform-style: preserve-3d;
   position: relative;
   /* added stuff above */
   text-align: center;
-  padding: 16px;
+  padding: 0px;
   display: inline-block;
   padding-bottom: 100px;
   width: 30%;
@@ -159,8 +160,8 @@ u{
   left: 0;
   backface-visibility:hidden;
   -webkit-backface-visibility:hidden;
-}
-.front{
+} */
+/* .front{
   z-index: 1;
 }
 .back {
@@ -169,11 +170,11 @@ u{
   animation: toFront 0.3s linear normal forwards;
 }
 
-.flip-container{
+.li.language{
   position: relative;
   perspective: 1000px;
 }
-.flip-container:hover .back {
+.li.language:hover .back {
   animation-delay: 0.3s;
   animation: toBack 0.3s linear normal  forwards;
 }
@@ -185,20 +186,26 @@ u{
   0% {z-index:1;}
   100% {z-index:0;}
 }
-.flip-container .skills {
-  transform-origin: 100% 240px; 
+li.language {
+  transform-origin: 100% 100px; 
 }
 
-.flip-container:hover .skills {
+li.language:hover {
   transform: rotateX(-180deg);
 }  */
 .lang-img{
   height: 130px;
 }
 .back{
-  height: 200px;
+  height: 150px;
+  /* width: 200px; */
+  padding: 0;
   border: 2px solid black;
 }
+/* .li.language:hover{
+  border: 2px solid red;
+  transform: rotateX(-180deg);
+}  */
 .other-skils{
   text-align: center;
 }
@@ -224,6 +231,52 @@ u{
 .other-skills-li:hover{
   color: white;
 }
+.projects-section{
+  height: 90vh;
+  text-align: center;
+  overflow: hidden;
+}
+.my-projects-blurb{
+  padding: 40px;
+}
+.projects-container{
+  padding: 25px;
+  display: inline-block;
+}
+.projects-ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.project-li{
+  float: left;
+  /* padding: 25px; */
+  margin: 0;
+} 
+.project-img{
+  height: 250px;
+  border: 2px solid black;
+}
+.project-about{
+  font-family: "Helvetica Neue";
+  font-weight: 300;
+  font-size: 17px;
+}
+/* .project-li a span{
+display: none;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+background: rgba(28, 28, 28, 0.88);
+color: #ddd;
+padding: 20px;
+}
+.project-li:hover a span{
+  display: block;
+}  */
 .section-four{
   height: 30vh;
   text-align: center;
@@ -250,13 +303,6 @@ u{
   display: block;
   padding: 0;
 }
-.divide-line{
-  height: 50%;
-  width: 1px;
-  position: absolute;
-  margin-left: 50%;
-  background-color: black;
-}
 
 .contact-li{
   display: block;
@@ -265,9 +311,6 @@ u{
   height: 44px;
   font-size: 2.8em;
 }
-/* .fa{
-  font-size: 2.8em;
-} */
 .fa-linkedin-square{
   color: #2F7AB4;
 }
@@ -281,3 +324,97 @@ color: #cd3838;
   font-family: sans-serif;
   font-size: 15px;
 }
+
+
+
+
+
+
+/* PROJECTS PAGE */
+/* .name-home{
+  padding-top: 6px;
+  height: 30px;
+  overflow: hidden;
+  float: left;
+  margin-right: 100px;
+  background-color: white;
+
+}
+#project-one{
+  height: 100vh;
+  background-color: #E85E5E;
+}
+#project-two{
+  height: 100vh;
+  background-color: #0AA2E3;
+}
+#project-three{
+  height: 100vh;
+  background-color: #DB6BDB;
+}
+.full-proj-container{
+  position: relative;
+  overflow: hidden;
+}
+.desktop-container{
+  height: 100%;
+  position: relative;
+
+.apple-container{
+  position: relative;
+  height: 500px;
+  width: 700px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.apple-monitor{
+  position: absolute;
+  height: 500px;
+  width: 700px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.project-container-one{
+  position: relative;
+  height: 100%;
+}
+.project-container-two{
+  position: relative;
+  height: 100%;
+}
+.project-container-three{
+  position: relative;
+  height: 100%;
+}
+.project-img-one{
+  position: absolute;
+  height: 64.61%;
+  top: 7%;
+  left: 4.6%;
+  width: 91%;
+}
+.project-img-two{
+  position: absolute;
+  height: 64.61%;
+  top: 7%;
+  left: 4.6%;
+  width: 91%;
+  z-index: -1;
+}
+.project-img-three{
+  position: absolute;
+  height: 64.61%;
+  top: 7%;
+  left: 4.6%;
+  width: 91%;
+} */
+/* Remember This */
+/* .project-img{
+  position: absolute;
+  height: 64.61%;
+  top: 7%;
+  left: 4.6%;
+  width: 91%;
+} */

@@ -9,6 +9,10 @@ app.get('/', function (req, res){
   res.sendFile(__dirname + '/index.html');
 });
 
+app.get('/projects', function(req, res){
+  res.sendFile(__dirname + '/public/projects.html');
+})
+
 app.listen(port);
 console.log('=============================');
 console.log('Server running on the new portfolio ' + port);

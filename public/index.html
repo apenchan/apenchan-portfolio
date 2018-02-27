@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Anna Penchansky</title>
-  <link rel="stylesheet" href="./font-awesome/css/font-awesome.css">
-  <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
   <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.css">
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
@@ -15,7 +13,7 @@
 <body>
   <div class="main-nav">
     <ul class="nav-list">
-      <li class="nav-opt">Projects</li>
+      <li class="nav-opt"><a href="/projects">Projects</a></li>
       <li class="nav-opt">Resume</li>
       <li class="nav-opt">About</li>
     </ul>
@@ -67,15 +65,37 @@
       <li class="other-skills-li">Scrum</li>
     </ul>
   </section>
+  <section class="projects-section">
+    <div class="my-projects-blurb">
+      <h3>Some projects I've been working on. Check them out!</h3>
+    </div>
+    <div class="projects-container">
+      <ul class="projects-ul row">
+        <li class="project-li col-sm-4"><a href="https://yourtravelerapp.herokuapp.com/" class="project-link"><img class="project-img" src="/assests/traveler-app-homepage.png"/><span>Your Traveler App</span></a>
+          <div class="project-about">
+          <p>Your Travler App allows travlers to meet new people in the city teir visiting. They can join local events and get to know a city through the eyes of a local. Additionally, locals can create events and open them up to the visitors passing by.</p>
+          <p>This project was built with React, NodeJS, and MongoDB</p>
+          </div>
+        </li>
+        <li class="project-li col-sm-4"><a href="https://angumoviewatch.herokuapp.com/" class="project-link"><img class="project-img" src="/assests/cinesaved.png"/><span>Cinesaved</span></a>
+          <div class="project-about">
+          <p>After creating an account, users can search for any movie and place it in their reminders list to watch later. They can also filter movies by release date and search via the IMDB API.</p>
+          <p>This project was built with Angular 1.6, NodeJS, and MongoDB</p>
+          </div>
+        </li>
+        <li class="project-li col-sm-4"><img class="project-img" src="/assests/my-weather.png"></li>
+      </ul>
+    </div>
+  </section>
   <section class="section-four">
     <div class="blurb-two">
       <h2>You can find me walking the streets of Washington DC</h2>
     </div>
     <div class="contact-container">
       <ul class="contact-info">
-        <li class="contact-li"><i class="fa fa-envelope-square"></i></li>
-        <li class="contact-li"><i class="fa fa-linkedin-square"></i></li>
-        <li class="contact-li"><i class="fa fa-github-square"></i></li>
+        <li class="contact-li"><a href="mailto:a.penchansky@gmail.com"><i class="fa fa-envelope-square"></i></a></li>
+        <li class="contact-li"><a href="https://linkedin.com/in/anna-penchansky"><i class="fa fa-linkedin-square"></i></a></li>
+        <li class="contact-li"><a href="https://www.github.com/apenchan"><i class="fa fa-github-square"></i></a></li>
       </ul>
     </div>
     <div class="footer-note">
