@@ -110,7 +110,8 @@ u{
   margin-left: 15%;
 }
 .section-three{
-  height: 180vh;
+  height: 150vh;
+  text-align: center;
   background-color: #ececec;
   /* background-color: #29C3ED; */
   padding: 1px;
@@ -123,9 +124,9 @@ u{
   font-size: 25px;
   margin-top: 7%;
   /* margin-bottom: 7%; */
-  width: 420px;
-  margin-left: 33%;
-  line-height: 2.2em;
+  width: 339px;
+  margin-left: 35%;
+  line-height: 2.0rem;
   box-sizing: border-box;
   border: 2px solid black;
 }
@@ -149,10 +150,7 @@ u{
   position: relative;
   /* added stuff above */
   text-align: center;
-  padding: 0px;
-  display: inline-block;
   padding-bottom: 100px;
-  width: 30%;
 }
 /* .front, .back {
   position: absolute;
@@ -197,22 +195,26 @@ li.language:hover {
   height: 130px;
 }
 .back{
-  height: 150px;
+  width: 176px;
+  height: 100px;
+  list-style-type: none;
+  position: absolute;
+  margin-left: 88px;
   /* width: 200px; */
   padding: 0;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 /* .li.language:hover{
   border: 2px solid red;
   transform: rotateX(-180deg);
 }  */
-.other-skils{
+.other-skills{
   text-align: center;
 }
 .other-skills-img{
   height: 130px;
 }
-.other-skils-ul{
+.other-skills-ul{
   list-style-type: none;
   margin-top: -40px;
   margin-left: 33%;
@@ -325,7 +327,91 @@ color: #cd3838;
   font-size: 15px;
 }
 
+/* !!!!!!MOBILE!!!!!! */
 
+/* Portrait and Landscape */
+@media only screen 
+and (min-width: 375px) 
+and (max-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) {
+  .main-nav{
+    text-align: center;
+  } 
+  .nav-list{
+    float: left;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding-bottom: 30px;
+  }
+  .nav-opt{
+    width: 100px;
+    float: left;
+    display: block;
+    padding: 0px;
+  }
+  .myVideo{
+    width: 2707.15px;
+    margin-top: 0px;
+    margin-left: -1421.57px;
+    height: 839px;
+  }
+  .section-two{
+    background-size: 1000px;
+  }
+  .about-me{
+    padding-top: 50px;
+    font-size: 1.05rem;
+    width: 65%;
+    margin-left: 15%;
+  }
+  .section-three{
+    text-align: center;
+    height: 260vh;
+  }
+  .technical-skills{
+    margin-left: 25%;
+    width: 200px;
+  }
+  .skills{
+    margin-left: 25px;
+    margin-right: 0;
+  }
+  .language{
+    width: 40%;
+  }
+  .back{
+    width: 130px;
+    height: 100px;
+    position: relative;
+    margin-left: 1px;
+    padding: 0;
+  }
+  .other-skills-ul{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .projects-section{
+    height: 230vh;
+  }
+  .projects-container{
+    padding: 0;
+  }
+  .projects-ul{
+    margin: 0;
+    padding: 0;
+  }
+  .project-li{
+    padding: 0;
+    margin: 0;
+  }
+  .project-img{
+    height: 200px;
+  }
+  .footer-note{
+    padding-bottom: 5px;
+  }
+}
 
 
 
